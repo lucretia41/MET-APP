@@ -1,6 +1,6 @@
-/* body {
-  /* background-color: blue; */
-/* } */ 
+body {
+background-color: rgb(136, 207, 30); 
+} 
 
 /* #artists-header {
     display: flex;
@@ -20,7 +20,7 @@
     margin: 2rem;
   }
   
-  .card {
+  #card {
     text-align: center;
     border: grey solid 1px;
     padding: 1rem;
