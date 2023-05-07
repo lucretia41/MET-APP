@@ -55,7 +55,7 @@
     color: #e04b52;
   }
   
-  .container {
+  #container {
     padding: 1rem;
     width: stretch;
     height: auto;
