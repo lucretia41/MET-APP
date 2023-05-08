@@ -2,7 +2,7 @@ body {
 background-color: rgb(136, 207, 30); 
 } 
 
-/* #artists-header {
+#artists-header {
     display: flex;
     justify-content: center;
     background: #e0e1e6;
@@ -10,7 +10,7 @@ background-color: rgb(136, 207, 30);
     height: 7rem;
     padding: 1rem;
   }
-   */
+  
   #artists-header img {
     height: 6rem;
     width: auto;
