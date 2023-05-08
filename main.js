@@ -1,15 +1,15 @@
-function renderOneArtist(artworks){
+function renderOneArtist(artwork){
     //Build Artist
     let card = document.createElement('ul')
     card.className = 'card'
     card.innerHTML = `
-   <img src="${artworks.primaryImage}" 
+   <img src="${artwork.primaryImage}" 
     <div class="content">
-    <h4>${artworks.artistsDisplayName}</h4>
+    <h4>${artwork.artistDisplayName}</h4>
     <p>
-        $<span class="count">${artworks.like}</span> Liked
+        $<span class="count">${artwork.like}</span> Liked
     </p>
-    <p>${artworks.like}</p>
+    <p>${artwork.title}</p>
     </div>
     <div class="buttons">
         <button> Donate $10 </button>
@@ -24,7 +24,7 @@ function renderOneArtist(artworks){
  function getAllArtists(){
     fetch('http://localhost:3000/artworks') 
         .then(res => res.json())
-        .then(artworks => artworks.forEach(artistDisplayName => renderOneArtist(artistDisplayName)))
+        .then(artworks => artworks.forEach(artwork => renderOneArtist(artwork)))
             
         }
  
