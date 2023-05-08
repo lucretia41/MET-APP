@@ -16,25 +16,16 @@ background-color: rgb(136, 207, 30);
     width: auto;
   }
   
-  #toy-collection {
-    margin: 2rem;
-  }
   
   #card {
     text-align: center;
-    border: grey solid 1px;
+    border: rgb(15, 14, 14) solid 1px;
     padding: 1rem;
     width: 15rem;
     height: 25rem;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #230709;
-  }
-  
-  .toy-avatar {
-    justify-self: center;
-    height: 12rem;
-    width: auto;
   }
   
   button {
