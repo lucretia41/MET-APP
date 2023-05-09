@@ -1,6 +1,6 @@
 function renderOneArtist(artwork){
     //Build Artist
-    let card = document.createElement('ul')
+    let card = document.createElement('li')
     card.className = 'card'
     card.innerHTML = `
    <img src="${artwork.primaryImage}" 
