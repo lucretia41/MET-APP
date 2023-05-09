@@ -44,7 +44,7 @@ function addGlow(event, image) {
     image.style.borderWidth = '';
     image.style.borderStyle = '';
     image.style.transition = '';
- }, 1000),
+ }, 1000)
 }
 
 function addGlowToArt(event, image) {
