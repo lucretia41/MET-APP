@@ -1,38 +1,36 @@
-function renderOneArtist(artwork){
-    //Build Artist
-    let card = document.createElement('li')
-    card.className = 'card'
-    card.innerHTML = `
-   <img src="${artwork.primaryImage}" 
-    <div class="content">
-    <h4>${artwork.artistDisplayName}</h4>
-    <p>
-        $<span class="count">${artwork.like}</span> Liked
-    </p>
-    <p>${artwork.title}</p>
-    </div>
-    <div class="buttons">
-        <button> Donate $10 </button>
-        <button> Set Fee</button>
-    </div>
-`
-    {/* add artist to dom */}
+fetch("http//:local/3000/artData")
+.then(res => res.json())
+.then(artistData => {
+    artistDisplay(artData),
+    showCaseArtist(artData[0]),
+    addNewArtist()
 
-    document.querySelector('#artist-list').appendChild(card)
-}
-   
- function getAllArtists(){
-    fetch('http://localhost:3000/artworks') 
-        .then(res => res.json())
-        .then(artworks => artworks.forEach(artwork => renderOneArtist(artwork)))
-            
-        }
- 
-   
-// {/* }get data and render artists to dom*/}
+})
 
-function initialize(){
-    getAllArtists()
-    console.log("get all artists")
+const artistDiplayNav = document.querySelector("artistDisplay")
+
+const artistName = document.querySelector(".artistName")
+const image = document.querySelector(".detail-image")
+const artTitle = document.querySelector(".title")
+const highlight = document.querySelector(".isHighlight")
+const likes = document.querySelector(".likes-details")
+
+function artistDisplay(artData) {
+    artData.forEach(art => {
+        const eachArt = document.createElement('img')
+        eachArt.src =art.image
+        .artDisplayNav.appendChild(eachArt)
+        eachArt.addEventListener('click', event => {
+            showCaseArtist(art)
+        })
+        eachArt.addEventListener('mouseover', event => {
+            addGlow(event, eachArt);
+        })
+    })
 }
-initialize()
+
+function addGlow(event, image) {
+    const colors = ['red', 'blue', 'green'];
+    const randomColor = [Math.floor(Math.random() * colors.length)];
+    
+}
