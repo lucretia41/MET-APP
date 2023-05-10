@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MET APP</title>
+    <title>Artist Highlights at the Met</title>
     <script src="main.js"> defer</script>
     
     <link rel="stylesheet" href="style.css">
@@ -12,27 +12,43 @@
 </head>
 
 <body>
-    <header>
-    <div id="artists-header">
-     
-    </div>
-</header>
-   
-    
+   <header>
+    <h3>Artist Highlights at the Met</h3>
+   </header>
+   <div id="Artists">
 
-    <div class="container">
-        <form class="artist-form">
-            <label for="name">Name </label>
-            <input type="text id="name" name=""name> />
-            <label for="name"> Image URL</label>
-            <input type="text" id="primary_Image_url" name="primary_Image_url" />
-            <label for="like">like</label>
-            <textarea name="like" id="like"></textarea>
-            <button type="submit">Artist</button>
-        </form>
-        <ul id="artist-list" class="card">
-            <!-- artists here -->
-        </ul>
-    </div>
+   </div>
+   <div "Artist-detail"> 
+    <img class="detail-image" alt="Enter Artist Name" />
+    <h2 class="name"> "Enter Artist name"</h2>
+    <h3 class="likes"></h3>
+
+
+   </div>
+
+
+  <h3>Artists:</h3>
+  <p>
+    <span id='likes-display'>Enter likes here</span>
+  </p>
+  <h3>Artists</h3>
+  <p id='likes-display'>
+    Insert artist here
+  </p>
+
+  <!-- New Artist Form -->
+  <form id="new-artist">
+    <h4>Add New Artist</h4>
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="new-name" />
+    <label for="likes">Likes:</Likes </label>
+    <input type="text" name="likes" id="new-likes" />
+    <label for="artist-image">Image: </label>
+    <input type="text" name="image" id="new-artist-image" />
+    <label for="highlight>isHighlight: </label>
+    <input type="text" name="is highlight" id="new-highlight" />
+    <textarea name="" id=""></textarea>
+    <input type="submit" value="Enter" />
+  </form>
 </body>
 </html>
