@@ -1,6 +1,6 @@
 fetch("http//:local/3000/artData")
 .then(res => res.json())
-.then(artistData => {
+.then(artData => {
     artistDisplay(artData),
     showCaseArtist(artData[0]),
     addNewArtist()
